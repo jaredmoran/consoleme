@@ -19,6 +19,9 @@ const ConsoleMeHeader = () => {
             <Dropdown.Item as={NavLink} to="/selfservice">
               Self Service Permissions
             </Dropdown.Item>
+            <Dropdown.Item as={NavLink} to="/templatedroles">
+              Modify Templated Roles
+            </Dropdown.Item>
             <Dropdown.Item as={NavLink} to="/requests">
               All Policy Requests
             </Dropdown.Item>

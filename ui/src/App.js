@@ -6,6 +6,7 @@ import ConsoleMeSelectRoles from "./components/roles/SelectRoles";
 import ConsoleMePolicyTable from "./components/policy/PolicyTable";
 import ConsoleMeRequestTable from "./components/request/RequestTable";
 import ConsoleMeSelfService from "./components/selfservice/SelfService";
+import ConsoleMeSelfServiceTemplatedRoles from "./components/templatedroles/SelfServiceTemplatedRoles";
 import ConsoleMeDynamicConfig from "./components/DynamicConfig";
 import PolicyRequestReview from "./components/request/PolicyRequestsReview";
 import PolicyEditor from "./components/policy/PolicyEditor";
@@ -38,6 +39,12 @@ function App() {
           exact
           path="/policies"
           component={ConsoleMePolicyTable}
+        />
+        <ProtectedRoute
+          key="templatedroles"
+          exact
+          path="/templatedroles"
+          component={ConsoleMeSelfServiceTemplatedRoles}
         />
         <ProtectedRoute
           key="review"
